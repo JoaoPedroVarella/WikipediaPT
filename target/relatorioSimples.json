@@ -1,0 +1,92 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3761488900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Search Easter egg",
+        "description": "",
+        "id": "search;search-easter-egg",
+        "after": [
+          {
+            "result": {
+              "duration": 28000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2495772100,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "that you access wikipedia in portugues",
+            "match": {
+              "location": "Post.thatYouAccessWikipediaInPortugues()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2047944800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "search for \"Ovo de Páscoa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ovo de Páscoa",
+                  "offset": 12
+                }
+              ],
+              "location": "Post.searchFor(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35446600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "displays the expression \"Ovo de Páscoa\" in the title of the tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ovo de Páscoa",
+                  "offset": 25
+                }
+              ],
+              "location": "Post.displaysTheExpressionInTheTitleOfTheTab(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search",
+    "description": "",
+    "id": "search",
+    "keyword": "Feature",
+    "uri": "Post.feature"
+  }
+]
